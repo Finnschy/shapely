@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+
+/* 
+font-family: 'Raleway', sans-serif; 
+
+Headerhöhe:76px
+Logofarbe: #666
+Logofarbe in hover: #333
+Menüfarbe: #333 
+Menüfarbe in hover: #337ab7
+Button “Read more” ist: #745cf9
+Button:hover “Read more” ist: #5234f9
+<p> ist: #8c979e
+<h2> ist: #0e1015  
+*/
+
+body {
+    font-family: 'Raleway', sans-serif; 
+    margin: 0;
+}
+
+nav {
+    height: 76px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+}
+
+/* ul display flex damit die liste nebeneinander steht */
+ul {
+    /* background: green; */
+    list-style: none;
+}
+
+.nav-logo {
+    /* border: 1px solid red; */
+    width: 30%;
+    align-self: center;
+    font-size: 1.8rem;
+    margin-left: 5%;
+}
+
+.nav-logo a:hover {
+    color: #333;
+}
+
+.nav-logo a {
+    color: #666;
+}
+
+.main-nav a:hover {
+    color: #5234f9;
+    transition: 0.3s;
+}
+
+.main-nav {
+    /* border: 1px solid yellow; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    font-size: .9rem;
+    margin-left: 3%;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+header {
+    height: 90vh;
+    color: #fff;
+    background: url(../img/wave.jpg) center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hd-button{
+    display: inline-block;
+    min-width: 200px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 2%; 
+}
+
+.more {
+    background: #745cf9;
+}
+
+.hd-button:hover {
+    color: #333;
+    background: #fff;
+    transition: .5s;
+}
+
+.more:hover , .read-button:hover , .more-btn:hover , .download-now:hover{
+    color: #fff;
+    background: #5234f9;
+    transition: .5s;
+}
+
+.hd-button:active {
+    background: #745cf9;
+    border: 1px solid #745cf9;
+    color: #fff;
+}
+.header-content h1 {
+    font-size: 4rem;
+}
+
+.header-content p {
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.seo-friendly , .portfolio-sect{
+    display: flex;
+    align-items: center;   
+    justify-content: space-around;
+    padding: 10% 0 10% 0;
+    
+}
+
+.seo-friendly p , .portfolio-sect p , .limitless-options p {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin-bottom: 5%;
+    color: #8c979e;
+}
+
+.seo-friendly img {
+    width: 45%;    
+}
+
+.seo-friendly-container {
+    width: 28%;
+    margin-left: -5%;
+}
+
+.read-button , .more-btn , .download-now{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background: #745cf9;
+    display: inline-block;
+    margin-bottom: 10%;
+    padding: 3% 8%
+}
+
+.portfolio-sect {
+    background: #f5f5f5;
+}
+
+.portfolio-container {
+    width: 28%;
+    margin-left: 5%;
+}
+
+.parallax-sect {
+    min-height: 60vh;
+    background: url(../img/wave2.jpg) top / cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.parallax-sect h3 {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    margin-bottom: 1%;
+}
+
+.more-btn {
+    padding: 1.5% 5%;
+}
+
+.parallax-sect article {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.limitless-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.limitless-options p {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+
+.download-now {
+    padding: 1.5% 3%;
+}
+
+.limitless-options img {
+    margin-top: -7%;
+}
+
+.gallery {
+    color: #fff;
+    background: #0e1015;    
+    padding-top: 3%;
+}
+
+.gallery h2 , .gallery p {
+    text-align: center;
+}
+
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2%;
+}
+
+.img-gallery img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.img-gallery figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-gallery figcaption {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: bottom .3s;
+
+}
+
+.img-gallery figure:hover figcaption {
+    bottom: 0;
+
+}
+
+
+/* .customer-voices {
+
+}
+
+
+.clients {
+
+}
+ */
+.wp-theme {
+
+}
+
+footer {
+    min-height: 20vh;
+    background: #0e1015;  
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li:nth-of-type(1) {
+    
+    margin-right: 70%;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer ul li a:hover {
+    color: #5234f9;
+    transition: .5s; 
+}
